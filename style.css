@@ -1,0 +1,97 @@
+/* 🌸 Body Styling: Center everything */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #654d59;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for Heading and Form */
+.container {
+  width: 100%;
+  max-width: 400%;
+  padding: 15px;
+}
+
+/* 📝 Heading Styling */
+h1 {
+  text-align: center;
+  color: #e2e2e2;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+/* Form Inputs and Elements */
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #e9e9e9;
+}
+
+/* Focus Effect for Inputs */
+input:focus, textarea:focus, select:focus {
+  border-color: #4CAF50;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  outline: none;
+}
+
+/* Gender Radio Buttons */
+.gender {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* 📱 Responsive Design for Small Screens */
+@media (max-width: 600px) {
+  .container {
+      max-width: 100%;
+      padding: 10px;
+  }
+
+  input, textarea, select {
+      font-size: 14px;
+  }
+
+  button {
+      font-size: 16px;
+  }
+}
